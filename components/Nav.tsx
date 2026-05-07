@@ -1,10 +1,11 @@
 import { LATEST_RELEASE_URL, REPO_URL } from '@/lib/links';
 
 const links = [
-  { href: '#features', label: 'Features' },
-  { href: '#preview', label: 'Preview' },
-  { href: '#download', label: 'Download' },
-  { href: '#faq', label: 'Questions' },
+  { href: '/#features', label: 'Features' },
+  { href: '/#preview', label: 'Preview' },
+  { href: '/docs', label: 'Docs' },
+  { href: '/#download', label: 'Download' },
+  { href: '/#faq', label: 'Questions' },
 ];
 
 export function Nav() {

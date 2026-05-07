@@ -21,7 +21,10 @@ export function Footer() {
           <a href={ISSUES_URL} target="_blank" rel="noopener noreferrer" className="hover:text-ink">
             Issues
           </a>
-          <a href="#faq" className="hover:text-ink">
+          <a href="/docs" className="hover:text-ink">
+            Docs
+          </a>
+          <a href="/#faq" className="hover:text-ink">
             Questions
           </a>
         </div>
