@@ -42,7 +42,7 @@ const platforms: Platform[] = [
 
 export function Download() {
   return (
-    <section id="download" className="px-6 py-24 bg-paper-2 border-y border-rule-soft">
+    <section id="download" className="scroll-mt-20 px-6 py-24 bg-paper-2 border-y border-rule-soft">
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <div className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-accent-ink mb-4">

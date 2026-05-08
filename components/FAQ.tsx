@@ -27,7 +27,7 @@ const items = [
 
 export function FAQ() {
   return (
-    <section id="faq" className="px-6 py-24">
+    <section id="faq" className="scroll-mt-20 px-6 py-24">
       <div className="mx-auto max-w-3xl">
         <div className="mb-12">
           <div className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-accent-ink mb-4">

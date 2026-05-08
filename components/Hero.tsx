@@ -1,5 +1,4 @@
 import { ProductCarousel } from './ProductCarousel';
-import { LATEST_RELEASE_URL } from '@/lib/links';
 
 export function Hero() {
   return (
@@ -23,9 +22,7 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href={LATEST_RELEASE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#download"
               className="inline-flex items-center gap-2 h-11 px-5 rounded-md bg-accent text-paper font-medium text-[14px] hover:bg-accent-ink transition-colors"
             >
               <svg
@@ -42,7 +39,7 @@ export function Hero() {
                 <path d="M7 10l5 5 5-5" />
                 <path d="M12 15V3" />
               </svg>
-              Get SideNotes for macOS
+              Download SideNotes
             </a>
             <a
               href="#preview"
