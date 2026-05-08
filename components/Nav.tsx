@@ -4,6 +4,7 @@ const links = [
   { href: '/#features', label: 'Features' },
   { href: '/#preview', label: 'Preview' },
   { href: '/docs', label: 'Docs' },
+  { href: '/changelog', label: 'Changelog' },
   { href: '/#download', label: 'Download' },
   { href: '/#faq', label: 'Questions' },
 ];
