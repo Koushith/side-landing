@@ -28,15 +28,15 @@ const platforms: Platform[] = [
     name: 'Windows',
     arch: '10 / 11 · x64',
     suffix: '.exe',
+    href: DOWNLOADS.windows,
     glyph: 'windows',
-    comingSoon: true,
   },
   {
     name: 'Linux',
     arch: 'AppImage · x64',
     suffix: '.AppImage',
+    href: DOWNLOADS.linux,
     glyph: 'linux',
-    comingSoon: true,
   },
 ];
 
@@ -53,7 +53,8 @@ export function Download() {
           </h2>
           <p className="font-serif text-[16px] leading-relaxed text-ink-2 max-w-xl mx-auto">
             All builds are unsigned for now — first launch on macOS may need a
-            right-click → Open. Windows and Linux are next on the roadmap.
+            right-click → Open. Windows and Linux builds come from the same CI
+            pipeline but get less mileage; bug reports welcome.
           </p>
         </div>
 

@@ -21,7 +21,7 @@ export default function DocsPage() {
         <div className="mx-auto max-w-6xl">
           <header className="mb-14 max-w-3xl">
             <div className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-accent-ink mb-4">
-              Documentation · v0.1
+              Documentation · v0.2
             </div>
             <h1 className="font-serif text-[56px] md:text-[64px] leading-[1.02] tracking-[-0.025em] font-semibold mb-5">
               How SideNotes Works.
@@ -61,7 +61,7 @@ export default function DocsPage() {
                     <code>/Applications</code>.
                   </li>
                   <li>
-                    First launch is unsigned in v0.1 — right-click the app and
+                    First launch is unsigned in v0.2 — right-click the app and
                     pick <em>Open</em> the first time so Gatekeeper lets it
                     through.
                   </li>
@@ -852,7 +852,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                 </p>
                 <h3>The App Feels Slow on a Huge Vault</h3>
                 <p>
-                  v0.1 indexes the whole vault on launch. 10k+ notes is fine on
+                  v0.2 indexes the whole vault on launch. 10k+ notes is fine on
                   modern hardware, but the initial scan can take a few seconds.
                   Subsequent launches are fast — the index is in memory and
                   updated incrementally as files change.
@@ -889,7 +889,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                   </li>
                   <li>
                     <strong>Feature ideas</strong> — open a discussion before
-                    a PR for anything bigger than a polish fix; the v0.1 scope
+                    a PR for anything bigger than a polish fix; the v0.2 scope
                     is intentionally small.
                   </li>
                   <li>

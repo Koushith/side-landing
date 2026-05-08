@@ -8,7 +8,7 @@ export function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-tag-soft text-tag font-mono text-[10.5px] font-medium uppercase tracking-[0.08em] mb-7">
             <span className="w-1.5 h-1.5 rounded-full bg-tag" />
-            v0.1 · for macOS
+            v0.2 · macOS, Windows, Linux
           </div>
 
           <h1 className="font-serif text-[64px] md:text-[80px] leading-[0.98] tracking-[-0.025em] font-semibold text-ink mb-7">

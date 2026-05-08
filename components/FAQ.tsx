@@ -17,7 +17,7 @@ const items = [
   },
   {
     q: 'Are There Plugins?',
-    a: 'Not in v0.1. The roadmap leaves room for them, but the goal is to ship the right defaults first — slash menu, graph, canvas, daily notes — instead of pushing customisation onto you.',
+    a: 'Not in v0.2. The roadmap leaves room for them, but the goal is to ship the right defaults first — slash menu, graph, canvas, daily notes — instead of pushing customisation onto you.',
   },
   {
     q: 'Is My Data Sent Anywhere?',

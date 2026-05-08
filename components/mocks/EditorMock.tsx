@@ -36,7 +36,7 @@ export function EditorMock() {
           <div className="flex items-center gap-2.5 pb-3 border-b border-rule-soft">
             <span className="w-[22px] h-[22px] rounded-md bg-ink text-paper grid place-items-center font-serif font-semibold italic text-[13px]">S</span>
             <span className="font-serif font-semibold text-[15px]">obs-test</span>
-            <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.08em] text-ink-3">v0.1</span>
+            <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.08em] text-ink-3">v0.2</span>
           </div>
           <div className="bg-paper border border-rule rounded-md px-2.5 py-1.5 flex items-center gap-2 text-ink-3 text-[12px]">
             <svg width={13} height={13} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round">
