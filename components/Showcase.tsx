@@ -7,7 +7,7 @@ export function Showcase() {
             Three views, one vault
           </div>
           <h2 className="font-serif text-[44px] md:text-[52px] leading-[1.05] tracking-[-0.025em] font-semibold mb-5">
-            Same notes. Different lenses.
+            Same Notes. Different Lenses.
           </h2>
           <p className="font-serif text-[18px] leading-relaxed text-ink-2">
             Switch between writing, exploring connections, and arranging things
@@ -53,22 +53,22 @@ export function Showcase() {
                 backgroundSize: '12px 12px',
               }}
             >
-              <div className="absolute top-3 left-3 w-24 h-12 bg-paper border border-rule rounded-md p-1.5">
+              <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M 19 26 C 19 42, 30 42, 30 58" stroke="#c4623a" strokeWidth="0.4" fill="none" strokeLinecap="round" />
+                <path d="M 81 38 C 81 50, 47 50, 47 58" stroke="#c4623a" strokeWidth="0.4" fill="none" strokeLinecap="round" />
+              </svg>
+              <div className="absolute top-[6%] left-[4%] w-[30%] h-[20%] bg-paper border border-rule rounded-md p-1.5">
                 <div className="font-mono text-[7px] uppercase tracking-wide text-ink-3 mb-0.5">Goal</div>
                 <div className="font-serif text-[7px] text-ink leading-tight">Ship the migration.</div>
               </div>
-              <div className="absolute top-[58%] left-[15%] w-28 h-14 bg-paper border border-link rounded-md p-1.5">
-                <div className="font-serif text-[8px] font-semibold text-ink mb-0.5">Atomic Habits</div>
-                <div className="font-serif text-[7px] text-ink-3 leading-tight">3 highlights · last opened…</div>
-              </div>
-              <div className="absolute top-[20%] right-3 w-24 h-12 bg-paper border border-rule rounded-md p-1.5">
+              <div className="absolute top-[18%] right-[4%] w-[30%] h-[20%] bg-paper border border-rule rounded-md p-1.5">
                 <div className="font-mono text-[7px] uppercase tracking-wide text-ink-3 mb-0.5">Note</div>
                 <div className="font-serif text-[7px] text-ink leading-tight">Pair with Sam Friday.</div>
               </div>
-              <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
-                <path d="M 30 20 C 30 50, 50 50, 50 70" stroke="#c4623a" strokeWidth="0.4" fill="none" />
-                <path d="M 70 25 C 70 50, 60 60, 60 70" stroke="#c4623a" strokeWidth="0.4" fill="none" />
-              </svg>
+              <div className="absolute top-[58%] left-[15%] w-[38%] h-[24%] bg-paper border border-link rounded-md p-1.5">
+                <div className="font-serif text-[8px] font-semibold text-ink mb-0.5">Atomic Habits</div>
+                <div className="font-serif text-[7px] text-ink-3 leading-tight">3 highlights · last opened…</div>
+              </div>
             </div>
             <div className="mt-4 font-serif text-[14px] text-ink leading-snug">
               Drop notes onto an infinite board. Connect cards. Step back, see shape.

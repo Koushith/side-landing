@@ -3,9 +3,9 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Changelog — Side',
+  title: 'Changelog — SideNotes',
   description:
-    'Release notes for Side. New features, fixes, and removed cruft, version by version.',
+    'Release notes for SideNotes. New features, fixes, and removed cruft, version by version.',
 };
 
 type Section = { label: 'New' | 'Fixed' | 'Removed'; items: string[] };
@@ -27,7 +27,7 @@ const RELEASES: Release[] = [
         label: 'New',
         items: [
           'Outline panel — live table of contents alongside every markdown note',
-          'Folder changes made outside Side (addDir / unlinkDir) now sync to the sidebar instantly',
+          'Folder changes made outside SideNotes (addDir / unlinkDir) now sync to the sidebar instantly',
           'Deleting a file externally now closes its tab and focuses the next one',
         ],
       },
@@ -105,10 +105,10 @@ export default function ChangelogPage() {
               Changelog · v{RELEASES[0].version}
             </div>
             <h1 className="font-serif text-[56px] md:text-[64px] leading-[1.02] tracking-[-0.025em] font-semibold mb-5">
-              What changed, when.
+              What Changed, When.
             </h1>
             <p className="font-serif text-[19px] leading-[1.6] text-ink-2">
-              Side ships small and often. Every release, top to bottom — what
+              SideNotes ships small and often. Every release, top to bottom — what
               landed, what got fixed, what got cut. The newest version is at the
               top.
             </p>

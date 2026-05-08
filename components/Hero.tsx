@@ -12,11 +12,11 @@ export function Hero() {
           </div>
 
           <h1 className="font-serif text-[64px] md:text-[80px] leading-[0.98] tracking-[-0.025em] font-semibold text-ink mb-7">
-            A quiet second brain.
+            A Quiet Second Brain.
           </h1>
 
           <p className="font-serif text-[20px] md:text-[22px] leading-[1.55] text-ink-2 max-w-2xl mb-10">
-            Side is a notes app for thinkers who don&apos;t trust the cloud. Notion-easy
+            SideNotes is a notes app for thinkers who don&apos;t trust the cloud. Notion-easy
             editing, Obsidian-deep linking — but every note stays as a plain
             markdown file on your Mac.
           </p>
@@ -42,7 +42,7 @@ export function Hero() {
                 <path d="M7 10l5 5 5-5" />
                 <path d="M12 15V3" />
               </svg>
-              Get Side for macOS
+              Get SideNotes for macOS
             </a>
             <a
               href="#preview"

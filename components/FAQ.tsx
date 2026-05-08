@@ -1,26 +1,26 @@
 const items = [
   {
-    q: 'What does it cost?',
-    a: 'Nothing. Side is free and open source — MIT licensed. If you want to support it, star the repo or open a thoughtful issue.',
+    q: 'What Does It Cost?',
+    a: 'Nothing. SideNotes is free and open source — MIT licensed. If you want to support it, star the repo or open a thoughtful issue.',
   },
   {
-    q: 'Is there a Windows / Linux build?',
+    q: 'Is There a Windows / Linux Build?',
     a: 'Yes — pick your platform from the Download section. macOS gets the most testing; Windows and Linux builds come from the same CI pipeline but have less mileage. Bug reports welcome.',
   },
   {
-    q: 'How do I sync notes across devices?',
-    a: "Side is local-first by design — point your vault at any folder you already sync (iCloud Drive, Dropbox, Syncthing, a USB stick). The app doesn't run a sync service; we don't want to.",
+    q: 'How Do I Sync Notes Across Devices?',
+    a: "SideNotes is local-first by design — point your vault at any folder you already sync (iCloud Drive, Dropbox, Syncthing, a USB stick). The app doesn't run a sync service; we don't want to.",
   },
   {
-    q: 'Will my files work in Obsidian?',
+    q: 'Will My Files Work in Obsidian?',
     a: "Yes. Notes are plain markdown with [[wikilinks]] and #tags. Canvas files use Obsidian's .canvas JSON format. You can switch in either direction without exporting anything.",
   },
   {
-    q: 'Are there plugins?',
+    q: 'Are There Plugins?',
     a: 'Not in v0.1. The roadmap leaves room for them, but the goal is to ship the right defaults first — slash menu, graph, canvas, daily notes — instead of pushing customisation onto you.',
   },
   {
-    q: 'Is my data sent anywhere?',
+    q: 'Is My Data Sent Anywhere?',
     a: 'No. There is no telemetry, no analytics, no auto-update phone-home. The app reads and writes files in the folder you picked. That is the entire surface area.',
   },
 ];
@@ -34,7 +34,7 @@ export function FAQ() {
             Questions
           </div>
           <h2 className="font-serif text-[44px] md:text-[52px] leading-[1.05] tracking-[-0.025em] font-semibold mb-4">
-            Honest answers.
+            Honest Answers.
           </h2>
         </div>
 

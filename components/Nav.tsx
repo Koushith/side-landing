@@ -17,7 +17,7 @@ export function Nav() {
           <span className="w-[26px] h-[26px] rounded-md bg-ink text-paper grid place-items-center font-serif font-semibold italic text-[15px]">
             S
           </span>
-          <span className="font-serif text-[17px] font-semibold tracking-tight">Side</span>
+          <span className="font-serif text-[17px] font-semibold tracking-tight">SideNotes</span>
         </a>
         <div className="hidden md:flex items-center gap-6 ml-2">
           {links.map((l) => (
@@ -48,7 +48,7 @@ export function Nav() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 px-3 h-8 rounded-md bg-ink text-paper text-[13px] font-medium hover:bg-ink-2 transition-colors"
           >
-            Get Side
+            Get SideNotes
           </a>
         </div>
       </div>

@@ -9,7 +9,7 @@ export function Footer() {
           <span className="w-[26px] h-[26px] rounded-md bg-ink text-paper grid place-items-center font-serif font-semibold italic text-[15px]">
             S
           </span>
-          <span className="font-serif text-[17px] font-semibold tracking-tight">Side</span>
+          <span className="font-serif text-[17px] font-semibold tracking-tight">SideNotes</span>
         </a>
         <div className="font-serif text-[14px] text-ink-3 max-w-md">
           A quiet, local-first second brain. Plain markdown, on your Mac.
@@ -30,7 +30,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto max-w-6xl mt-10 pt-6 border-t border-rule-soft flex items-center justify-between font-mono text-[10.5px] uppercase tracking-[0.08em] text-ink-4">
-        <span>© {year} Side · MIT</span>
+        <span>© {year} SideNotes · MIT</span>
         <span className="inline-flex items-center gap-1.5 text-tag normal-case font-medium">
           <span className="w-1.5 h-1.5 rounded-full bg-tag" />
           Saved on your Mac

@@ -46,10 +46,10 @@ export function Download() {
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <div className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-accent-ink mb-4">
-            Get Side
+            Get SideNotes
           </div>
           <h2 className="font-serif text-[44px] md:text-[52px] leading-[1.05] tracking-[-0.025em] font-semibold mb-4">
-            Pick your platform.
+            Pick Your Platform.
           </h2>
           <p className="font-serif text-[16px] leading-relaxed text-ink-2 max-w-xl mx-auto">
             All builds are unsigned for now — first launch on macOS may need a

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Side — a quiet second brain',
+  title: 'SideNotes — a quiet second brain',
   description:
     'Notion-easy editor, Obsidian-deep linking. Plain markdown files on your Mac. No cloud, no lock-in.',
   icons: {
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   openGraph: {
-    title: 'Side — a quiet second brain',
+    title: 'SideNotes — a quiet second brain',
     description:
       'Notion-easy editor, Obsidian-deep linking. Plain markdown files on your Mac.',
     type: 'website',

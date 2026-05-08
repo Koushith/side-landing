@@ -8,9 +8,9 @@ import { Callout } from '@/components/docs/Callout';
 import { ShortcutTable } from '@/components/docs/ShortcutTable';
 
 export const metadata: Metadata = {
-  title: 'Docs — Side',
+  title: 'Docs — SideNotes',
   description:
-    'Everything you can do in Side: vaults, the editor, wikilinks, mentions, tags, canvas, the graph, daily notes, templates, themes, export, and every keyboard shortcut.',
+    'Everything you can do in SideNotes: vaults, the editor, wikilinks, mentions, tags, canvas, the graph, daily notes, templates, themes, export, and every keyboard shortcut.',
 };
 
 export default function DocsPage() {
@@ -24,7 +24,7 @@ export default function DocsPage() {
               Documentation · v0.1
             </div>
             <h1 className="font-serif text-[56px] md:text-[64px] leading-[1.02] tracking-[-0.025em] font-semibold mb-5">
-              How Side works.
+              How SideNotes Works.
             </h1>
             <p className="font-serif text-[19px] leading-[1.6] text-ink-2">
               A complete tour of the app — every view, every shortcut, every file
@@ -40,10 +40,10 @@ export default function DocsPage() {
               <Section
                 id="install"
                 eyebrow="01 — Install"
-                title="Download and first launch."
+                title="Download and First Launch."
               >
                 <p>
-                  Side is a desktop app built on Electron. Builds for macOS
+                  SideNotes is a desktop app built on Electron. Builds for macOS
                   (Apple Silicon and Intel), Windows, and Linux are published on
                   GitHub Releases. macOS gets the most testing; the other
                   platforms come from the same CI pipeline but have less mileage
@@ -57,7 +57,7 @@ export default function DocsPage() {
                     landing page.
                   </li>
                   <li>
-                    Open the <code>.dmg</code> and drag Side into{' '}
+                    Open the <code>.dmg</code> and drag SideNotes into{' '}
                     <code>/Applications</code>.
                   </li>
                   <li>
@@ -78,7 +78,7 @@ export default function DocsPage() {
                   <code>chmod +x Side-*.AppImage</code>, and run it. AppImages
                   are self-contained — no install step.
                 </p>
-                <h3>Build from source</h3>
+                <h3>Build from Source</h3>
                 <pre>
                   <code>{`git clone https://github.com/Koushith/side-deck
 cd side-deck
@@ -95,28 +95,28 @@ npm run dev`}</code>
               <Section
                 id="vault"
                 eyebrow="02 — Vault"
-                title="Pick a folder. That is your vault."
+                title="Pick a Folder. That Is Your Vault."
               >
                 <p>
-                  Side does not store your notes in a database or in the cloud.
+                  SideNotes does not store your notes in a database or in the cloud.
                   Your <strong>vault</strong> is just a folder on disk full of{' '}
                   <code>.md</code> and <code>.canvas</code> files. You own
                   every byte.
                 </p>
-                <h3>First launch</h3>
+                <h3>First Launch</h3>
                 <p>
                   The onboarding tour opens automatically. Step four asks you
                   to <em>Pick a vault</em>: choose any folder on your computer
-                  — empty or full of existing markdown — and Side indexes it.
+                  — empty or full of existing markdown — and SideNotes indexes it.
                 </p>
-                <h3>Switching vaults</h3>
+                <h3>Switching Vaults</h3>
                 <p>
                   Click the <strong>S</strong> chip at the top of the sidebar
                   to close the current vault and pick another. You can also run{' '}
                   <em>Switch vault</em> from the command palette (<Kbd>⌘</Kbd>
                   <Kbd>K</Kbd>).
                 </p>
-                <h3>What lives in the vault folder</h3>
+                <h3>What Lives in the Vault Folder</h3>
                 <ul>
                   <li>
                     <code>*.md</code> — your notes. Plain markdown with
@@ -142,7 +142,7 @@ npm run dev`}</code>
                   </li>
                 </ul>
                 <Callout>
-                  Side watches the vault folder. Edit a file in another editor
+                  SideNotes watches the vault folder. Edit a file in another editor
                   and the change shows up live — no reload, no merge dialog.
                 </Callout>
               </Section>
@@ -150,7 +150,7 @@ npm run dev`}</code>
               <Section
                 id="interface"
                 eyebrow="03 — Interface"
-                title="The three views, the sidebar, the tabs."
+                title="The Three Views, the Sidebar, the Tabs."
               >
                 <p>
                   The window has three top-level views, switched from the
@@ -219,7 +219,7 @@ npm run dev`}</code>
                   reorder. <Kbd>⌘</Kbd>
                   <Kbd>W</Kbd> closes the active tab.
                 </p>
-                <h3>Focus mode</h3>
+                <h3>Focus Mode</h3>
                 <p>
                   Press <Kbd>⌘</Kbd>
                   <Kbd>.</Kbd> and the sidebar slides away — just the page.{' '}
@@ -230,7 +230,7 @@ npm run dev`}</code>
               <Section
                 id="editor"
                 eyebrow="04 — Writing"
-                title="The editor: slash, markdown, paste."
+                title="The Editor: Slash, Markdown, Paste."
               >
                 <p>
                   The editor is built on TipTap, with a markdown round-trip on
@@ -238,7 +238,7 @@ npm run dev`}</code>
                   disk is plain markdown. You never have to leave one for the
                   other.
                 </p>
-                <h3>The slash menu</h3>
+                <h3>The Slash Menu</h3>
                 <p>
                   Press <Kbd>/</Kbd> on a new line and a menu opens with every
                   block you can insert: headings, bullet and numbered lists,
@@ -246,7 +246,7 @@ npm run dev`}</code>
                   Filter by typing — <code>/h2</code> jumps straight to a
                   heading.
                 </p>
-                <h3>Markdown shortcuts</h3>
+                <h3>Markdown Shortcuts</h3>
                 <p>
                   Type these at the start of a line and the editor transforms
                   them in place. Nothing to memorize beyond muscle memory you
@@ -275,7 +275,7 @@ npm run dev`}</code>
                     <code>[ ] </code> — Task list item.
                   </li>
                 </ul>
-                <h3>Inline formatting</h3>
+                <h3>Inline Formatting</h3>
                 <p>
                   Select text and a bubble menu floats above it. Or use the
                   shortcuts: <Kbd>⌘</Kbd>
@@ -284,7 +284,7 @@ npm run dev`}</code>
                   <Kbd>E</Kbd> inline code. Markdown like <code>**bold**</code>{' '}
                   and <code>`code`</code> works too.
                 </p>
-                <h3>Drag handles</h3>
+                <h3>Drag Handles</h3>
                 <p>
                   Hover the left margin of any block — a handle appears. Drag
                   to reorder, or click for a block menu (delete, duplicate,
@@ -296,7 +296,7 @@ npm run dev`}</code>
                   Images are saved into <code>&lt;vault&gt;/assets/</code> and
                   referenced relatively, so the vault stays portable.
                 </p>
-                <h3>Code highlighting</h3>
+                <h3>Code Highlighting</h3>
                 <p>
                   Code blocks render with syntax highlighting via lowlight (a
                   light wrapper around highlight.js). Most common languages are
@@ -313,11 +313,11 @@ npm run dev`}</code>
               <Section
                 id="linking"
                 eyebrow="05 — Linking"
-                title="Wikilinks, mentions, and tags."
+                title="Wikilinks, Mentions, and Tags."
               >
                 <p>
                   Linking is the difference between a notes app and a second
-                  brain. Side gives you three light syntaxes — pick whichever
+                  brain. SideNotes gives you three light syntaxes — pick whichever
                   fits the moment.
                 </p>
                 <h3>Wikilinks: [[</h3>
@@ -360,7 +360,7 @@ npm run dev`}</code>
                   the one you have open, with a snippet of the surrounding
                   text. Backlinks update as you type, in either direction.
                 </p>
-                <h3>Connections panel</h3>
+                <h3>Connections Panel</h3>
                 <p>
                   Below backlinks, the Connections panel shows the immediate
                   neighbourhood of the current note as a tiny graph — a
@@ -372,20 +372,20 @@ npm run dev`}</code>
               <Section
                 id="canvas"
                 eyebrow="06 — Canvas"
-                title="Whiteboards for spatial thinking."
+                title="Whiteboards for Spatial Thinking."
               >
                 <p>
                   Canvas is built on React Flow. It is for the parts of
                   thinking that resist a linear page — sequencing, clustering,
                   mind-mapping, mood boards.
                 </p>
-                <h3>Creating a canvas</h3>
+                <h3>Creating a Canvas</h3>
                 <p>
                   Open the command palette (<Kbd>⌘</Kbd>
                   <Kbd>K</Kbd>) and run <em>New canvas</em>. Give it a name and
                   it appears in the sidebar with a grid icon.
                 </p>
-                <h3>Adding cards</h3>
+                <h3>Adding Cards</h3>
                 <ul>
                   <li>
                     <strong>Drag a note</strong> from the sidebar onto the
@@ -400,16 +400,16 @@ npm run dev`}</code>
                     Drop an image onto the canvas to add an image card.
                   </li>
                 </ul>
-                <h3>Connecting cards</h3>
+                <h3>Connecting Cards</h3>
                 <p>
                   Hover a card edge — small handles appear. Drag from one
                   handle to another card to draw an arrow.
                 </p>
-                <h3>File format</h3>
+                <h3>File Format</h3>
                 <p>
                   Canvases save as <code>.canvas</code> files in your vault
                   using the same JSON schema Obsidian uses. You can hand-edit
-                  them, version-control them, and switch between Side and
+                  them, version-control them, and switch between SideNotes and
                   Obsidian without converting anything.
                 </p>
               </Section>
@@ -417,14 +417,14 @@ npm run dev`}</code>
               <Section
                 id="graph"
                 eyebrow="07 — Graph"
-                title="See the shape of your thinking."
+                title="See the Shape of Your Thinking."
               >
                 <p>
                   The graph is a Sigma + Graphology view of every wikilink in
                   your vault. Press <Kbd>⌘</Kbd>
                   <Kbd>2</Kbd> to open it.
                 </p>
-                <h3>Reading the map</h3>
+                <h3>Reading the Map</h3>
                 <ul>
                   <li>
                     <strong>Node colour</strong> — derived from the note's
@@ -447,7 +447,7 @@ npm run dev`}</code>
                     physics-based, so other nodes adjust around it.
                   </li>
                 </ul>
-                <h3>Local-graph mode</h3>
+                <h3>Local-Graph Mode</h3>
                 <p>
                   Toggle local mode to focus on the active note plus one or two
                   hops out — useful when the global graph gets noisy.
@@ -457,7 +457,7 @@ npm run dev`}</code>
               <Section
                 id="daily"
                 eyebrow="08 — Daily notes"
-                title="A page for each day."
+                title="A Page for Each Day."
               >
                 <p>
                   Press <Kbd>⌘</Kbd>
@@ -465,17 +465,17 @@ npm run dev`}</code>
                   the spot if it does not exist). Files live under{' '}
                   <code>Daily Notes/YYYY-MM-DD.md</code>.
                 </p>
-                <h3>The masthead</h3>
+                <h3>The Masthead</h3>
                 <p>
                   Daily notes open with a header that shows the date in long
                   form, a mood strip you can click to set the day's tone, a
                   streak chip, and a "Yesterday's loose ends" panel that pulls
                   unchecked task-list items from the previous day's note.
                 </p>
-                <h3>Templates for daily notes</h3>
+                <h3>Templates for Daily Notes</h3>
                 <p>
                   Drop a markdown file at <code>templates/daily.md</code> and
-                  Side uses it as the body for new daily notes. The template
+                  SideNotes uses it as the body for new daily notes. The template
                   can include <code>{'{{date}}'}</code> tokens.
                 </p>
               </Section>
@@ -483,7 +483,7 @@ npm run dev`}</code>
               <Section
                 id="templates"
                 eyebrow="09 — Templates"
-                title="Reusable scaffolds for new notes."
+                title="Reusable Scaffolds for New Notes."
               >
                 <p>
                   Any markdown file inside a top-level <code>templates/</code>{' '}
@@ -523,7 +523,7 @@ created: {{date}}
               <Section
                 id="search"
                 eyebrow="10 — Search"
-                title="The command palette."
+                title="The Command Palette."
               >
                 <p>
                   Press <Kbd>⌘</Kbd>
@@ -538,7 +538,7 @@ created: {{date}}
                   </li>
                   <li>
                     <strong>Search note bodies</strong> — type two or more
-                    characters and Side searches inside file contents,
+                    characters and SideNotes searches inside file contents,
                     returning matched snippets.
                   </li>
                   <li>
@@ -557,7 +557,7 @@ created: {{date}}
               <Section
                 id="files"
                 eyebrow="11 — Files"
-                title="Organising and managing notes."
+                title="Organising and Managing Notes."
               >
                 <h3>Creating</h3>
                 <ul>
@@ -578,10 +578,10 @@ created: {{date}}
                 <p>
                   Drag a note onto a folder to move it. Drop it on the empty
                   space at the bottom of the tree to move it to the vault
-                  root. Side updates the underlying file path; wikilinks that
+                  root. SideNotes updates the underlying file path; wikilinks that
                   resolved to it keep working because they match by basename.
                 </p>
-                <h3>Renaming and deleting</h3>
+                <h3>Renaming and Deleting</h3>
                 <p>
                   Right-click any note for <em>Rename</em>, <em>Duplicate</em>,{' '}
                   <em>Reveal in Finder</em>, and <em>Delete</em>. Rename
@@ -631,7 +631,7 @@ created: {{date}}
               <Section
                 id="themes"
                 eyebrow="13 — Themes"
-                title="Six palettes, light + dark."
+                title="Six Palettes, Light + Dark."
               >
                 <p>
                   Open the theme picker from the sidebar (the sun icon in the
@@ -669,16 +669,16 @@ created: {{date}}
               <Section
                 id="sync"
                 eyebrow="14 — Sync"
-                title="Bring your own."
+                title="Bring Your Own."
               >
                 <p>
-                  Side does not run a sync service and never will. Your vault
+                  SideNotes does not run a sync service and never will. Your vault
                   is a folder, so anything that syncs folders works:
                 </p>
                 <ul>
                   <li>
                     <strong>iCloud Drive</strong> — point your vault at{' '}
-                    <code>~/Library/Mobile Documents/com~apple~CloudDocs/Side</code>
+                    <code>~/Library/Mobile Documents/com~apple~CloudDocs/SideNotes</code>
                     .
                   </li>
                   <li>
@@ -696,7 +696,7 @@ created: {{date}}
                   </li>
                 </ul>
                 <Callout>
-                  Side's file-watcher debounces external writes, so a sync
+                  SideNotes' file-watcher debounces external writes, so a sync
                   client overwriting a note while you have it open is
                   reflected in the editor without losing your unsaved changes
                   — but the safer bet is to close the note before pulling.
@@ -706,10 +706,10 @@ created: {{date}}
               <Section
                 id="format"
                 eyebrow="15 — File format"
-                title="What is on disk."
+                title="What Is on Disk."
               >
                 <p>
-                  Side reads and writes plain markdown — no proprietary
+                  SideNotes reads and writes plain markdown — no proprietary
                   extensions. A note looks like this:
                 </p>
                 <pre>
@@ -732,7 +732,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                 <ul>
                   <li>
                     <strong>Frontmatter</strong> — optional YAML between{' '}
-                    <code>---</code> fences. Side reads <code>title</code> as
+                    <code>---</code> fences. SideNotes reads <code>title</code> as
                     the canonical title; everything else is preserved
                     untouched.
                   </li>
@@ -761,7 +761,7 @@ Related: [[Query planning|the planner]], #database, #performance.
               <Section
                 id="shortcuts"
                 eyebrow="16 — Shortcuts"
-                title="Every keyboard shortcut."
+                title="Every Keyboard Shortcut."
               >
                 <p>
                   Open this panel inside the app any time with <Kbd>⌘</Kbd>
@@ -790,7 +790,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                   ]}
                 />
 
-                <h3>In the editor</h3>
+                <h3>In the Editor</h3>
                 <ShortcutTable
                   rows={[
                     { keys: ['/'], desc: 'Slash menu — insert blocks' },
@@ -805,7 +805,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                   ]}
                 />
 
-                <h3>Markdown shortcuts (just type)</h3>
+                <h3>Markdown Shortcuts (Just Type)</h3>
                 <ShortcutTable
                   rows={[
                     { keys: ['#', '␣'], desc: 'Heading 1 (## for H2, ### for H3)' },
@@ -827,16 +827,16 @@ Related: [[Query planning|the planner]], #database, #performance.
               <Section
                 id="troubleshooting"
                 eyebrow="17 — Troubleshooting"
-                title="When things misbehave."
+                title="When Things Misbehave."
               >
-                <h3>Notes from another editor are not showing up</h3>
+                <h3>Notes from Another Editor Are Not Showing Up</h3>
                 <p>
-                  Side watches the vault folder using the OS file events. If
+                  SideNotes watches the vault folder using the OS file events. If
                   you are syncing through a service that writes files in odd
                   orders (some cloud drives), close and reopen the vault from
                   the sidebar to force a re-index.
                 </p>
-                <h3>The graph is empty</h3>
+                <h3>The Graph Is Empty</h3>
                 <p>
                   The graph only renders edges for resolved wikilinks. If your
                   notes are connected by markdown links (<code>[text](url)</code>
@@ -844,23 +844,23 @@ Related: [[Query planning|the planner]], #database, #performance.
                   sparse. Convert with a find-and-replace, or just start using{' '}
                   <code>[[</code> from now on.
                 </p>
-                <h3>Image paste creates a broken link</h3>
+                <h3>Image Paste Creates a Broken Link</h3>
                 <p>
                   Check that <code>&lt;vault&gt;/assets/</code> exists and is
-                  writable. If you renamed the vault folder while Side was
+                  writable. If you renamed the vault folder while SideNotes was
                   open, restart the app.
                 </p>
-                <h3>The app feels slow on a huge vault</h3>
+                <h3>The App Feels Slow on a Huge Vault</h3>
                 <p>
                   v0.1 indexes the whole vault on launch. 10k+ notes is fine on
                   modern hardware, but the initial scan can take a few seconds.
                   Subsequent launches are fast — the index is in memory and
                   updated incrementally as files change.
                 </p>
-                <h3>I want to start over</h3>
+                <h3>I Want to Start Over</h3>
                 <p>
-                  Quit Side. Pick a different folder as your vault on next
-                  launch (or the same folder, after moving files out). Side
+                  Quit SideNotes. Pick a different folder as your vault on next
+                  launch (or the same folder, after moving files out). SideNotes
                   has no global database to reset — there is no state outside
                   the vault.
                 </p>
@@ -869,7 +869,7 @@ Related: [[Query planning|the planner]], #database, #performance.
               <Section
                 id="contribute"
                 eyebrow="18 — Contribute"
-                title="Side is open source."
+                title="SideNotes Is Open Source."
               >
                 <p>
                   The repo is at{' '}
@@ -885,7 +885,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                 <ul>
                   <li>
                     <strong>Bug reports</strong> — please include the OS, the
-                    Side version (sidebar bottom row), and reproduction steps.
+                    SideNotes version (sidebar bottom row), and reproduction steps.
                   </li>
                   <li>
                     <strong>Feature ideas</strong> — open a discussion before
@@ -899,7 +899,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                   </li>
                 </ul>
                 <p>
-                  Side is MIT-licensed. Use it however you want.
+                  SideNotes is MIT-licensed. Use it however you want.
                 </p>
               </Section>
             </main>

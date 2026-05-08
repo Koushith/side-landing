@@ -3,37 +3,37 @@ import { Glyph } from './Glyph';
 const features = [
   {
     eyebrow: 'Editor',
-    title: 'Notion-easy. Markdown-deep.',
+    title: 'Notion-Easy. Markdown-Deep.',
     body: 'Slash menu for blocks, drag handles, tables, code with syntax highlighting. Every keystroke saves a plain .md file you can open anywhere — vim, BBEdit, the next decade.',
     glyph: 'pen' as const,
   },
   {
     eyebrow: 'Linking',
-    title: 'Type [[ to connect ideas.',
+    title: 'Type [[ to Connect Ideas.',
     body: 'Wikilink autocomplete with a real picker. Type @ for a unified note + tag + date mention. Backlinks panel always visible. The graph colours nodes by folder so structure is readable at a glance.',
     glyph: 'link' as const,
   },
   {
     eyebrow: 'Local first',
-    title: 'Your files stay yours.',
+    title: 'Your Files Stay Yours.',
     body: 'Pick any folder on your Mac — that is your vault. No accounts, no sync conflicts, no pricing tier locking your notes. Move it to iCloud Drive or Syncthing if you want sync. Your call.',
     glyph: 'lock' as const,
   },
   {
     eyebrow: 'Spatial',
-    title: 'Canvas for visual thinking.',
+    title: 'Canvas for Visual Thinking.',
     body: 'Drag notes onto an infinite whiteboard. Connect cards. Resize. The canvas saves as JSON next to your notes — Obsidian-compatible if you ever want to switch.',
     glyph: 'grid' as const,
   },
   {
     eyebrow: 'Daily notes',
-    title: 'Show up, every day.',
+    title: 'Show Up, Every Day.',
     body: "Press ⌘D for today. The masthead pulls weather, mood, streak, and yesterday's loose ends — so journaling has momentum even on tired days.",
     glyph: 'calendar' as const,
   },
   {
     eyebrow: 'Six themes',
-    title: 'Read in the right light.',
+    title: 'Read in the Right Light.',
     body: 'Paper, Ink, Forest, Dusk, Carbon, Rose. Each in light + dark. Built on CSS custom props, so the editor, the graph, and the canvas all change at once.',
     glyph: 'palette' as const,
   },
@@ -45,14 +45,14 @@ export function Features() {
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl mb-16 md:pl-9">
           <div className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-accent-ink mb-4">
-            Why Side
+            Why SideNotes
           </div>
           <h2 className="font-serif text-[44px] md:text-[52px] leading-[1.05] tracking-[-0.025em] font-semibold mb-5">
-            Calm tools for thinking, not chasing.
+            Calm Tools for Thinking, Not Chasing.
           </h2>
           <p className="font-serif text-[18px] leading-relaxed text-ink-2">
             Most notes apps want to live in the cloud, surface notifications, and
-            become a job. Side does the opposite — it stays on your computer,
+            become a job. SideNotes does the opposite — it stays on your computer,
             keeps your notes in plain text, and gets quiet when you start typing.
           </p>
         </div>
