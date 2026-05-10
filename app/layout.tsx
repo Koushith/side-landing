@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { SITE_URL, TWITTER_URL } from '@/lib/links';
 import {
@@ -108,7 +109,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="bg-paper text-ink">{children}</body>
+      <body className="bg-paper text-ink">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
