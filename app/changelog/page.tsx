@@ -3,7 +3,7 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Changelog — SideNotes',
+  title: 'Changelog · SideNotes',
   description:
     'Release notes for SideNotes. New features, fixes, and removed cruft, version by version.',
 };
@@ -21,12 +21,12 @@ const RELEASES: Release[] = [
     version: '0.2.0',
     date: 'May 2026',
     highlight:
-      'Outline, smarter file-watching, and a cleaner editor — minor version, real polish.',
+      'Outline, smarter file-watching, and a cleaner editor, minor version, real polish.',
     sections: [
       {
         label: 'New',
         items: [
-          'Outline panel — live table of contents alongside every markdown note',
+          'Outline panel, live table of contents alongside every markdown note',
           'Folder changes made outside SideNotes (addDir / unlinkDir) now sync to the sidebar instantly',
           'Deleting a file externally now closes its tab and focuses the next one',
         ],
@@ -61,7 +61,7 @@ const RELEASES: Release[] = [
           'Vault-based markdown editor with TipTap + live markdown serialisation',
           'Wikilinks [[note]], #tags, daily notes with mood + streak tracking',
           'Graph view (Sigma.js + ForceAtlas2), Canvas view (React Flow)',
-          'Connections panel — backlinks and outgoing links with inline excerpts',
+          'Connections panel, backlinks and outgoing links with inline excerpts',
           'Multi-theme picker: Paper, Ink, Forest, Dusk, Carbon, Rose',
           'Focus mode, command palette (⌘K), slash menu (/), keyboard shortcuts (⌘/)',
           'Export as PDF, HTML, Markdown',
@@ -73,25 +73,10 @@ const RELEASES: Release[] = [
   },
 ];
 
-const SECTION_STYLE: Record<
-  Section['label'],
-  { dot: string; label: string; chip: string }
-> = {
-  New: {
-    dot: 'bg-tag',
-    label: 'text-tag',
-    chip: 'bg-tag-soft text-tag',
-  },
-  Fixed: {
-    dot: 'bg-accent',
-    label: 'text-accent-ink',
-    chip: 'bg-accent-soft text-accent-ink',
-  },
-  Removed: {
-    dot: 'bg-ink-3',
-    label: 'text-ink-3',
-    chip: 'bg-paper-3 text-ink-3',
-  },
+const SECTION_STYLE: Record<Section['label'], { label: string }> = {
+  New: { label: 'text-tag' },
+  Fixed: { label: 'text-accent-ink' },
+  Removed: { label: 'text-ink-3' },
 };
 
 export default function ChangelogPage() {
@@ -108,89 +93,66 @@ export default function ChangelogPage() {
               What Changed, When.
             </h1>
             <p className="font-serif text-[19px] leading-[1.6] text-ink-2">
-              SideNotes ships small and often. Every release, top to bottom — what
+              SideNotes ships small and often. Every release, top to bottom, what
               landed, what got fixed, what got cut. The newest version is at the
               top.
             </p>
           </header>
 
-          <div className="relative">
-            <div
-              aria-hidden
-              className="absolute left-[7px] top-2 bottom-2 w-px bg-rule-soft md:left-[calc(180px+7px)]"
-            />
-
-            <div className="space-y-16">
-              {RELEASES.map((release, ri) => (
-                <article
-                  key={release.version}
-                  className="relative md:grid md:grid-cols-[180px_1fr] md:gap-10"
-                >
-                  <div className="md:sticky md:top-20 md:self-start mb-5 md:mb-0 flex items-center gap-3 md:block">
-                    <span
-                      aria-hidden
-                      className="relative z-10 grid place-items-center w-[15px] h-[15px] rounded-full bg-paper border-2 border-accent md:absolute md:left-[180px] md:-translate-x-1/2 md:top-[10px]"
-                    >
-                      <span className="w-[5px] h-[5px] rounded-full bg-accent" />
+          <div className="divide-y divide-rule-soft">
+            {RELEASES.map((release, ri) => (
+              <article key={release.version} className="py-12 first:pt-0">
+                <header className="mb-6">
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <h2 className="font-serif text-[28px] font-semibold tracking-tight">
+                      v{release.version}
+                    </h2>
+                    <span className="font-mono text-[11.5px] text-ink-3">
+                      {release.date}
                     </span>
-                    <div>
-                      <div className="flex items-baseline gap-2">
-                        <span className="font-serif text-[24px] font-semibold tracking-tight">
-                          v{release.version}
-                        </span>
-                        {ri === 0 && (
-                          <span className="font-mono text-[10px] uppercase tracking-[0.1em] px-2 py-[2px] rounded-full bg-accent text-paper">
-                            Latest
-                          </span>
-                        )}
-                      </div>
-                      <div className="font-mono text-[11.5px] text-ink-3 mt-1">
-                        {release.date}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="md:pl-10">
-                    {release.highlight && (
-                      <p className="font-serif text-[17px] leading-[1.55] text-ink-2 mb-7 italic">
-                        {release.highlight}
-                      </p>
+                    {ri === 0 && (
+                      <span className="font-mono text-[10px] uppercase tracking-[0.1em] px-2 py-[2px] rounded-full bg-accent text-paper">
+                        Latest
+                      </span>
                     )}
+                  </div>
+                  {release.highlight && (
+                    <p className="font-serif text-[17px] leading-[1.55] text-ink-2 italic">
+                      {release.highlight}
+                    </p>
+                  )}
+                </header>
 
-                    <div className="space-y-7">
-                      {release.sections.map((section) => {
-                        const style = SECTION_STYLE[section.label];
-                        return (
-                          <div key={section.label}>
-                            <div className="flex items-center gap-2 mb-3">
+                <div className="space-y-7">
+                  {release.sections.map((section) => {
+                    const style = SECTION_STYLE[section.label];
+                    return (
+                      <div key={section.label}>
+                        <div
+                          className={`font-mono text-[10.5px] uppercase tracking-[0.12em] mb-3 ${style.label}`}
+                        >
+                          {section.label}
+                        </div>
+                        <ul className="space-y-2">
+                          {section.items.map((item, i) => (
+                            <li
+                              key={i}
+                              className="flex gap-3 font-serif text-[15.5px] leading-[1.55] text-ink-2"
+                            >
                               <span
                                 aria-hidden
-                                className={`w-1.5 h-1.5 rounded-full ${style.dot}`}
+                                className="mt-[9px] w-1 h-1 rounded-full bg-ink-4 shrink-0"
                               />
-                              <span
-                                className={`font-mono text-[10.5px] uppercase tracking-[0.12em] ${style.label}`}
-                              >
-                                {section.label}
-                              </span>
-                            </div>
-                            <ul className="space-y-2 border-l border-rule-soft pl-4">
-                              {section.items.map((item, i) => (
-                                <li
-                                  key={i}
-                                  className="font-serif text-[15.5px] leading-[1.55] text-ink-2"
-                                >
-                                  {item}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    );
+                  })}
+                </div>
+              </article>
+            ))}
           </div>
 
           <div className="mt-20 pt-10 border-t border-rule-soft flex flex-wrap items-center justify-between gap-4">

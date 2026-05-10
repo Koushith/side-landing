@@ -8,7 +8,7 @@ import { Callout } from '@/components/docs/Callout';
 import { ShortcutTable } from '@/components/docs/ShortcutTable';
 
 export const metadata: Metadata = {
-  title: 'Docs — SideNotes',
+  title: 'Docs · SideNotes',
   description:
     'Everything you can do in SideNotes: vaults, the editor, wikilinks, mentions, tags, canvas, the graph, daily notes, templates, themes, export, and every keyboard shortcut.',
 };
@@ -27,7 +27,7 @@ export default function DocsPage() {
               How SideNotes Works.
             </h1>
             <p className="font-serif text-[19px] leading-[1.6] text-ink-2">
-              A complete tour of the app — every view, every shortcut, every file
+              A complete tour of the app, every view, every shortcut, every file
               format. Read top to bottom on day one, then jump back here when
               something is unclear.
             </p>
@@ -39,7 +39,7 @@ export default function DocsPage() {
             <main className="min-w-0 max-w-3xl">
               <Section
                 id="install"
-                eyebrow="01 — Install"
+                eyebrow="01 · Install"
                 title="Download and First Launch."
               >
                 <p>
@@ -47,7 +47,7 @@ export default function DocsPage() {
                   (Apple Silicon and Intel), Windows, and Linux are published on
                   GitHub Releases. macOS gets the most testing; the other
                   platforms come from the same CI pipeline but have less mileage
-                  — bug reports welcome.
+                 , bug reports welcome.
                 </p>
                 <h3>macOS</h3>
                 <ol>
@@ -61,7 +61,7 @@ export default function DocsPage() {
                     <code>/Applications</code>.
                   </li>
                   <li>
-                    First launch is unsigned in v0.2 — right-click the app and
+                    First launch is unsigned in v0.2, right-click the app and
                     pick <em>Open</em> the first time so Gatekeeper lets it
                     through.
                   </li>
@@ -76,7 +76,7 @@ export default function DocsPage() {
                 <p>
                   Download the <code>.AppImage</code>,{' '}
                   <code>chmod +x Side-*.AppImage</code>, and run it. AppImages
-                  are self-contained — no install step.
+                  are self-contained, no install step.
                 </p>
                 <h3>Build from Source</h3>
                 <pre>
@@ -94,7 +94,7 @@ npm run dev`}</code>
 
               <Section
                 id="vault"
-                eyebrow="02 — Vault"
+                eyebrow="02 · Vault"
                 title="Pick a Folder. That Is Your Vault."
               >
                 <p>
@@ -107,7 +107,7 @@ npm run dev`}</code>
                 <p>
                   The onboarding tour opens automatically. Step four asks you
                   to <em>Pick a vault</em>: choose any folder on your computer
-                  — empty or full of existing markdown — and SideNotes indexes it.
+                 , empty or full of existing markdown, and SideNotes indexes it.
                 </p>
                 <h3>Switching Vaults</h3>
                 <p>
@@ -119,37 +119,37 @@ npm run dev`}</code>
                 <h3>What Lives in the Vault Folder</h3>
                 <ul>
                   <li>
-                    <code>*.md</code> — your notes. Plain markdown with
+                    <code>*.md</code>: your notes. Plain markdown with
                     optional <code>---</code> frontmatter.
                   </li>
                   <li>
-                    <code>*.canvas</code> — whiteboard files. JSON, compatible
+                    <code>*.canvas</code>: whiteboard files. JSON, compatible
                     with Obsidian's canvas format.
                   </li>
                   <li>
-                    <code>assets/</code> — created automatically when you paste
+                    <code>assets/</code>: created automatically when you paste
                     or drop an image. Files are stored relative to the vault.
                   </li>
                   <li>
-                    <code>Daily Notes/</code> — created the first time you
+                    <code>Daily Notes/</code>: created the first time you
                     press <Kbd>⌘</Kbd>
                     <Kbd>D</Kbd>. One file per day, named{' '}
                     <code>YYYY-MM-DD.md</code>.
                   </li>
                   <li>
-                    <code>templates/</code> — drop any <code>.md</code> file
+                    <code>templates/</code>: drop any <code>.md</code> file
                     here and it shows up as a "New from template" option.
                   </li>
                 </ul>
                 <Callout>
                   SideNotes watches the vault folder. Edit a file in another editor
-                  and the change shows up live — no reload, no merge dialog.
+                  and the change shows up live, no reload, no merge dialog.
                 </Callout>
               </Section>
 
               <Section
                 id="interface"
-                eyebrow="03 — Interface"
+                eyebrow="03 · Interface"
                 title="The Three Views, the Sidebar, the Tabs."
               >
                 <p>
@@ -184,32 +184,32 @@ npm run dev`}</code>
                 <p>The left rail, top to bottom:</p>
                 <ul>
                   <li>
-                    <strong>Vault chip</strong> — click to switch vaults.
+                    <strong>Vault chip</strong>: click to switch vaults.
                   </li>
                   <li>
-                    <strong>Search</strong> — opens the command palette.
+                    <strong>Search</strong>: opens the command palette.
                   </li>
                   <li>
-                    <strong>Today</strong> — jumps to today's daily note,
+                    <strong>Today</strong>: jumps to today's daily note,
                     creating it if needed.
                   </li>
                   <li>
-                    <strong>All notes</strong> — flat, sortable list of every
+                    <strong>All notes</strong>: flat, sortable list of every
                     note.
                   </li>
                   <li>
-                    <strong>Pinned</strong> — filters the file tree to your
+                    <strong>Pinned</strong>: filters the file tree to your
                     pinned notes.
                   </li>
                   <li>
-                    <strong>Connections</strong> — opens the graph view.
+                    <strong>Connections</strong>: opens the graph view.
                   </li>
                   <li>
-                    <strong>File tree</strong> — folders + files. Drag to
+                    <strong>File tree</strong>: folders + files. Drag to
                     reorder, right-click for the context menu.
                   </li>
                   <li>
-                    <strong>Tags</strong> — every tag in your vault, sorted by
+                    <strong>Tags</strong>: every tag in your vault, sorted by
                     count. Click one to filter the tree.
                   </li>
                 </ul>
@@ -222,14 +222,14 @@ npm run dev`}</code>
                 <h3>Focus Mode</h3>
                 <p>
                   Press <Kbd>⌘</Kbd>
-                  <Kbd>.</Kbd> and the sidebar slides away — just the page.{' '}
+                  <Kbd>.</Kbd> and the sidebar slides away, just the page.{' '}
                   <Kbd>Esc</Kbd> brings it back.
                 </p>
               </Section>
 
               <Section
                 id="editor"
-                eyebrow="04 — Writing"
+                eyebrow="04 · Writing"
                 title="The Editor: Slash, Markdown, Paste."
               >
                 <p>
@@ -243,7 +243,7 @@ npm run dev`}</code>
                   Press <Kbd>/</Kbd> on a new line and a menu opens with every
                   block you can insert: headings, bullet and numbered lists,
                   task lists, quotes, code blocks, tables, images, dividers.
-                  Filter by typing — <code>/h2</code> jumps straight to a
+                  Filter by typing, <code>/h2</code> jumps straight to a
                   heading.
                 </p>
                 <h3>Markdown Shortcuts</h3>
@@ -254,25 +254,25 @@ npm run dev`}</code>
                 </p>
                 <ul>
                   <li>
-                    <code># </code> — Heading 1. <code>## </code>, <code>### </code>{' '}
+                    <code># </code>: Heading 1. <code>## </code>, <code>### </code>{' '}
                     work too.
                   </li>
                   <li>
-                    <code>- </code> — Bullet list.{' '}
-                    <code>1. </code> — Numbered list.
+                    <code>- </code>: Bullet list.{' '}
+                    <code>1. </code>: Numbered list.
                   </li>
                   <li>
-                    <code>&gt; </code> — Quote.
+                    <code>&gt; </code>: Quote.
                   </li>
                   <li>
-                    <code>```</code> — Code block. Add a language after the
+                    <code>```</code>: Code block. Add a language after the
                     backticks for syntax highlighting.
                   </li>
                   <li>
-                    <code>---</code> — Horizontal divider.
+                    <code>---</code>: Horizontal divider.
                   </li>
                   <li>
-                    <code>[ ] </code> — Task list item.
+                    <code>[ ] </code>: Task list item.
                   </li>
                 </ul>
                 <h3>Inline Formatting</h3>
@@ -286,7 +286,7 @@ npm run dev`}</code>
                 </p>
                 <h3>Drag Handles</h3>
                 <p>
-                  Hover the left margin of any block — a handle appears. Drag
+                  Hover the left margin of any block, a handle appears. Drag
                   to reorder, or click for a block menu (delete, duplicate,
                   turn into).
                 </p>
@@ -312,12 +312,12 @@ npm run dev`}</code>
 
               <Section
                 id="linking"
-                eyebrow="05 — Linking"
+                eyebrow="05 · Linking"
                 title="Wikilinks, Mentions, and Tags."
               >
                 <p>
                   Linking is the difference between a notes app and a second
-                  brain. SideNotes gives you three light syntaxes — pick whichever
+                  brain. SideNotes gives you three light syntaxes, pick whichever
                   fits the moment.
                 </p>
                 <h3>Wikilinks: [[</h3>
@@ -335,14 +335,14 @@ npm run dev`}</code>
                 </p>
                 <ul>
                   <li>
-                    Note titles —{' '}
+                    Note titles:{' '}
                     <code>@Atomic Habits</code> inserts a wikilink.
                   </li>
                   <li>
-                    Tags — <code>@meeting</code> inserts <code>#meeting</code>.
+                    Tags, <code>@meeting</code> inserts <code>#meeting</code>.
                   </li>
                   <li>
-                    Dates — <code>@today</code>, <code>@yesterday</code>,{' '}
+                    Dates, <code>@today</code>, <code>@yesterday</code>,{' '}
                     <code>@monday</code>, <code>@2026-05-08</code> all link to
                     the matching daily note.
                   </li>
@@ -363,7 +363,7 @@ npm run dev`}</code>
                 <h3>Connections Panel</h3>
                 <p>
                   Below backlinks, the Connections panel shows the immediate
-                  neighbourhood of the current note as a tiny graph — a
+                  neighbourhood of the current note as a tiny graph, a
                   fast-loading preview of the same data you see in the full
                   graph view.
                 </p>
@@ -371,12 +371,12 @@ npm run dev`}</code>
 
               <Section
                 id="canvas"
-                eyebrow="06 — Canvas"
+                eyebrow="06 · Canvas"
                 title="Whiteboards for Spatial Thinking."
               >
                 <p>
                   Canvas is built on React Flow. It is for the parts of
-                  thinking that resist a linear page — sequencing, clustering,
+                  thinking that resist a linear page, sequencing, clustering,
                   mind-mapping, mood boards.
                 </p>
                 <h3>Creating a Canvas</h3>
@@ -389,7 +389,7 @@ npm run dev`}</code>
                 <ul>
                   <li>
                     <strong>Drag a note</strong> from the sidebar onto the
-                    canvas — it embeds as a live card that reflects the note's
+                    canvas, it embeds as a live card that reflects the note's
                     current contents.
                   </li>
                   <li>
@@ -402,7 +402,7 @@ npm run dev`}</code>
                 </ul>
                 <h3>Connecting Cards</h3>
                 <p>
-                  Hover a card edge — small handles appear. Drag from one
+                  Hover a card edge, small handles appear. Drag from one
                   handle to another card to draw an arrow.
                 </p>
                 <h3>File Format</h3>
@@ -416,7 +416,7 @@ npm run dev`}</code>
 
               <Section
                 id="graph"
-                eyebrow="07 — Graph"
+                eyebrow="07 · Graph"
                 title="See the Shape of Your Thinking."
               >
                 <p>
@@ -427,36 +427,36 @@ npm run dev`}</code>
                 <h3>Reading the Map</h3>
                 <ul>
                   <li>
-                    <strong>Node colour</strong> — derived from the note's
+                    <strong>Node colour</strong>: derived from the note's
                     top-level folder. Move a note between folders and the
                     colour follows.
                   </li>
                   <li>
-                    <strong>Node size</strong> — scaled by the number of links
+                    <strong>Node size</strong>: scaled by the number of links
                     in and out.
                   </li>
                   <li>
-                    <strong>Hover</strong> — neighbours stay bright; everything
+                    <strong>Hover</strong>: neighbours stay bright; everything
                     else fades. The note title pins to the cursor.
                   </li>
                   <li>
-                    <strong>Click</strong> — opens the note in the editor.
+                    <strong>Click</strong>: opens the note in the editor.
                   </li>
                   <li>
-                    <strong>Drag</strong> — repositions the node. Layout is
+                    <strong>Drag</strong>: repositions the node. Layout is
                     physics-based, so other nodes adjust around it.
                   </li>
                 </ul>
                 <h3>Local-Graph Mode</h3>
                 <p>
                   Toggle local mode to focus on the active note plus one or two
-                  hops out — useful when the global graph gets noisy.
+                  hops out, useful when the global graph gets noisy.
                 </p>
               </Section>
 
               <Section
                 id="daily"
-                eyebrow="08 — Daily notes"
+                eyebrow="08 · Daily notes"
                 title="A Page for Each Day."
               >
                 <p>
@@ -482,7 +482,7 @@ npm run dev`}</code>
 
               <Section
                 id="templates"
-                eyebrow="09 — Templates"
+                eyebrow="09 · Templates"
                 title="Reusable Scaffolds for New Notes."
               >
                 <p>
@@ -493,14 +493,14 @@ npm run dev`}</code>
                 <h3>Tokens</h3>
                 <ul>
                   <li>
-                    <code>{'{{title}}'}</code> — the name you typed in the
+                    <code>{'{{title}}'}</code>: the name you typed in the
                     prompt.
                   </li>
                   <li>
-                    <code>{'{{date}}'}</code> — today's date, ISO format.
+                    <code>{'{{date}}'}</code>: today's date, ISO format.
                   </li>
                   <li>
-                    <code>{'{{time}}'}</code> — current time, 24-hour.
+                    <code>{'{{time}}'}</code>: current time, 24-hour.
                   </li>
                 </ul>
                 <h3>Example</h3>
@@ -522,7 +522,7 @@ created: {{date}}
 
               <Section
                 id="search"
-                eyebrow="10 — Search"
+                eyebrow="10 · Search"
                 title="The Command Palette."
               >
                 <p>
@@ -532,17 +532,17 @@ created: {{date}}
                 </p>
                 <ul>
                   <li>
-                    <strong>Jump to a note</strong> — fuzzy match on title.
+                    <strong>Jump to a note</strong>: fuzzy match on title.
                     With no query it shows your eight most recently edited
                     notes.
                   </li>
                   <li>
-                    <strong>Search note bodies</strong> — type two or more
+                    <strong>Search note bodies</strong>: type two or more
                     characters and SideNotes searches inside file contents,
                     returning matched snippets.
                   </li>
                   <li>
-                    <strong>Run a command</strong> — new note, new canvas,
+                    <strong>Run a command</strong>: new note, new canvas,
                     today's daily note, switch vault, open graph view, show
                     keyboard shortcuts, replay the onboarding tour, create from
                     any template.
@@ -556,7 +556,7 @@ created: {{date}}
 
               <Section
                 id="files"
-                eyebrow="11 — Files"
+                eyebrow="11 · Files"
                 title="Organising and Managing Notes."
               >
                 <h3>Creating</h3>
@@ -605,7 +605,7 @@ created: {{date}}
 
               <Section
                 id="export"
-                eyebrow="12 — Export"
+                eyebrow="12 · Export"
                 title="Markdown, HTML, or PDF."
               >
                 <p>
@@ -614,15 +614,15 @@ created: {{date}}
                 </p>
                 <ul>
                   <li>
-                    <strong>Markdown</strong> — copies the raw <code>.md</code>{' '}
+                    <strong>Markdown</strong>: copies the raw <code>.md</code>{' '}
                     file. Useful for sharing a single note out of context.
                   </li>
                   <li>
-                    <strong>HTML</strong> — renders to a self-contained HTML
+                    <strong>HTML</strong>: renders to a self-contained HTML
                     file with embedded styling.
                   </li>
                   <li>
-                    <strong>PDF</strong> — uses Electron's print engine, so the
+                    <strong>PDF</strong>: uses Electron's print engine, so the
                     PDF matches what you see on screen, including images.
                   </li>
                 </ul>
@@ -630,7 +630,7 @@ created: {{date}}
 
               <Section
                 id="themes"
-                eyebrow="13 — Themes"
+                eyebrow="13 · Themes"
                 title="Six Palettes, Light + Dark."
               >
                 <p>
@@ -639,25 +639,25 @@ created: {{date}}
                 </p>
                 <ul>
                   <li>
-                    <strong>Paper</strong> — warm cream and terracotta. The
+                    <strong>Paper</strong>: warm cream and terracotta. The
                     default.
                   </li>
                   <li>
-                    <strong>Ink</strong> — neutral white and blue. The
+                    <strong>Ink</strong>: neutral white and blue. The
                     cleanest, most professional.
                   </li>
                   <li>
-                    <strong>Forest</strong> — green and amber. Calm.
+                    <strong>Forest</strong>: green and amber. Calm.
                   </li>
                   <li>
-                    <strong>Dusk</strong> — desaturated brown and rust.
+                    <strong>Dusk</strong>: desaturated brown and rust.
                   </li>
                   <li>
-                    <strong>Carbon</strong> — minimal charcoal with violet
+                    <strong>Carbon</strong>: minimal charcoal with violet
                     accents. Lower contrast for long sessions.
                   </li>
                   <li>
-                    <strong>Rose</strong> — light pink with crimson accents.
+                    <strong>Rose</strong>: light pink with crimson accents.
                   </li>
                 </ul>
                 <p>
@@ -668,7 +668,7 @@ created: {{date}}
 
               <Section
                 id="sync"
-                eyebrow="14 — Sync"
+                eyebrow="14 · Sync"
                 title="Bring Your Own."
               >
                 <p>
@@ -677,20 +677,20 @@ created: {{date}}
                 </p>
                 <ul>
                   <li>
-                    <strong>iCloud Drive</strong> — point your vault at{' '}
+                    <strong>iCloud Drive</strong>: point your vault at{' '}
                     <code>~/Library/Mobile Documents/com~apple~CloudDocs/SideNotes</code>
                     .
                   </li>
                   <li>
-                    <strong>Dropbox / Google Drive / OneDrive</strong> —
+                    <strong>Dropbox / Google Drive / OneDrive</strong>:
                     anything that mounts as a normal folder is fine.
                   </li>
                   <li>
-                    <strong>Syncthing</strong> — peer-to-peer, no third party.
+                    <strong>Syncthing</strong>: peer-to-peer, no third party.
                     Recommended if you care about privacy.
                   </li>
                   <li>
-                    <strong>Git</strong> — version control your notes. Add an{' '}
+                    <strong>Git</strong>: version control your notes. Add an{' '}
                     <code>assets/.gitattributes</code> with{' '}
                     <code>* binary</code> if image diffs get noisy.
                   </li>
@@ -699,17 +699,17 @@ created: {{date}}
                   SideNotes' file-watcher debounces external writes, so a sync
                   client overwriting a note while you have it open is
                   reflected in the editor without losing your unsaved changes
-                  — but the safer bet is to close the note before pulling.
+                 , but the safer bet is to close the note before pulling.
                 </Callout>
               </Section>
 
               <Section
                 id="format"
-                eyebrow="15 — File format"
+                eyebrow="15 · File format"
                 title="What Is on Disk."
               >
                 <p>
-                  SideNotes reads and writes plain markdown — no proprietary
+                  SideNotes reads and writes plain markdown, no proprietary
                   extensions. A note looks like this:
                 </p>
                 <pre>
@@ -720,7 +720,7 @@ created: 2026-05-08
 
 # Database indexing
 
-The slow query was a sequential scan on a billion-row table —
+The slow query was a sequential scan on a billion-row table.
 [[Postgres performance]] would have caught it in review.
 
 Related: [[Query planning|the planner]], #database, #performance.
@@ -731,22 +731,22 @@ Related: [[Query planning|the planner]], #database, #performance.
                 </pre>
                 <ul>
                   <li>
-                    <strong>Frontmatter</strong> — optional YAML between{' '}
+                    <strong>Frontmatter</strong>: optional YAML between{' '}
                     <code>---</code> fences. SideNotes reads <code>title</code> as
                     the canonical title; everything else is preserved
                     untouched.
                   </li>
                   <li>
-                    <strong>Wikilinks</strong> — <code>[[Target]]</code> or{' '}
+                    <strong>Wikilinks</strong>: <code>[[Target]]</code> or{' '}
                     <code>[[Target|Display]]</code>. Resolved by basename, so
                     moving the file does not break the link.
                   </li>
                   <li>
-                    <strong>Tags</strong> — <code>#tag</code> in body text
+                    <strong>Tags</strong>: <code>#tag</code> in body text
                     (not in headings, code, or URLs).
                   </li>
                   <li>
-                    <strong>Tasks</strong> — standard markdown task lists.
+                    <strong>Tasks</strong>: standard markdown task lists.
                     Unchecked items from yesterday surface in the daily-note
                     masthead.
                   </li>
@@ -760,7 +760,7 @@ Related: [[Query planning|the planner]], #database, #performance.
 
               <Section
                 id="shortcuts"
-                eyebrow="16 — Shortcuts"
+                eyebrow="16 · Shortcuts"
                 title="Every Keyboard Shortcut."
               >
                 <p>
@@ -793,7 +793,7 @@ Related: [[Query planning|the planner]], #database, #performance.
                 <h3>In the Editor</h3>
                 <ShortcutTable
                   rows={[
-                    { keys: ['/'], desc: 'Slash menu — insert blocks' },
+                    { keys: ['/'], desc: 'Slash menu, insert blocks' },
                     { keys: ['[', '['], desc: 'Link to a note (autocomplete)' },
                     { keys: ['@'], desc: 'Mention a note, tag, or date' },
                     { keys: ['#'], desc: 'Add a tag (autocompletes after letters)' },
@@ -826,7 +826,7 @@ Related: [[Query planning|the planner]], #database, #performance.
 
               <Section
                 id="troubleshooting"
-                eyebrow="17 — Troubleshooting"
+                eyebrow="17 · Troubleshooting"
                 title="When Things Misbehave."
               >
                 <h3>Notes from Another Editor Are Not Showing Up</h3>
@@ -854,21 +854,21 @@ Related: [[Query planning|the planner]], #database, #performance.
                 <p>
                   v0.2 indexes the whole vault on launch. 10k+ notes is fine on
                   modern hardware, but the initial scan can take a few seconds.
-                  Subsequent launches are fast — the index is in memory and
+                  Subsequent launches are fast, the index is in memory and
                   updated incrementally as files change.
                 </p>
                 <h3>I Want to Start Over</h3>
                 <p>
                   Quit SideNotes. Pick a different folder as your vault on next
                   launch (or the same folder, after moving files out). SideNotes
-                  has no global database to reset — there is no state outside
+                  has no global database to reset, there is no state outside
                   the vault.
                 </p>
               </Section>
 
               <Section
                 id="contribute"
-                eyebrow="18 — Contribute"
+                eyebrow="18 · Contribute"
                 title="SideNotes Is Open Source."
               >
                 <p>
@@ -884,16 +884,16 @@ Related: [[Query planning|the planner]], #database, #performance.
                 </p>
                 <ul>
                   <li>
-                    <strong>Bug reports</strong> — please include the OS, the
+                    <strong>Bug reports</strong>: please include the OS, the
                     SideNotes version (sidebar bottom row), and reproduction steps.
                   </li>
                   <li>
-                    <strong>Feature ideas</strong> — open a discussion before
+                    <strong>Feature ideas</strong>: open a discussion before
                     a PR for anything bigger than a polish fix; the v0.2 scope
                     is intentionally small.
                   </li>
                   <li>
-                    <strong>Themes</strong> — themes are pure CSS-variable
+                    <strong>Themes</strong>: themes are pure CSS-variable
                     palettes. Adding one is a single object in{' '}
                     <code>src/stores/theme.ts</code>.
                   </li>

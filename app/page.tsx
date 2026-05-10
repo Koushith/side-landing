@@ -4,6 +4,7 @@ import { Features } from '@/components/Features';
 import { Showcase } from '@/components/Showcase';
 import { Download } from '@/components/Download';
 import { FAQ } from '@/components/FAQ';
+import { BuiltBy } from '@/components/BuiltBy';
 import { Footer } from '@/components/Footer';
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Showcase />
       <Download />
       <FAQ />
+      <BuiltBy />
       <Footer />
     </>
   );

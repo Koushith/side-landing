@@ -11,7 +11,7 @@ export function Showcase() {
           </h2>
           <p className="font-serif text-[18px] leading-relaxed text-ink-2">
             Switch between writing, exploring connections, and arranging things
-            spatially — without leaving the app. Everything reads from the same folder.
+            spatially, without leaving the app. Everything reads from the same folder.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export function Showcase() {
               </div>
             </div>
             <div className="mt-4 font-serif text-[14px] text-ink leading-snug">
-              Date masthead, mood strip, yesterday&apos;s loose ends — all auto-filled.
+              Date masthead, mood strip, yesterday&apos;s loose ends, all auto-filled.
             </div>
           </div>
         </div>

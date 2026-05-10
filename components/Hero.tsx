@@ -16,14 +16,14 @@ export function Hero() {
 
           <p className="font-serif text-[20px] md:text-[22px] leading-[1.55] text-ink-2 max-w-2xl mb-10">
             SideNotes is a notes app for thinkers who don&apos;t trust the cloud. Notion-easy
-            editing, Obsidian-deep linking — but every note stays as a plain
+            editing, Obsidian-deep linking, but every note stays as a plain
             markdown file on your Mac.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-3">
             <a
               href="#download"
-              className="inline-flex items-center gap-2 h-11 px-5 rounded-md bg-accent text-paper font-medium text-[14px] hover:bg-accent-ink transition-colors"
+              className="inline-flex justify-center items-center gap-2 h-11 px-5 rounded-md bg-accent text-paper font-medium text-[14px] hover:bg-accent-ink transition-colors"
             >
               <svg
                 width="14"
@@ -43,7 +43,7 @@ export function Hero() {
             </a>
             <a
               href="#preview"
-              className="inline-flex items-center gap-2 h-11 px-5 rounded-md border border-rule text-ink hover:bg-paper-2 transition-colors text-[14px]"
+              className="inline-flex justify-center items-center gap-2 h-11 px-5 rounded-md border border-rule text-ink hover:bg-paper-2 transition-colors text-[14px]"
             >
               See how it works
             </a>
@@ -58,7 +58,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="mt-20">
+        <div className="hidden md:block mt-20">
           <ProductCarousel />
         </div>
       </div>

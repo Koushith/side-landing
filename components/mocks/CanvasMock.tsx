@@ -83,7 +83,7 @@ export function CanvasMock() {
               <span className="font-mono text-[9px] uppercase tracking-[0.1em] text-ink-3">Text</span>
             </div>
             <div className="p-2.5 font-serif text-[10.5px] leading-snug text-ink">
-              Q2 2026 — Three big bets:
+              Q2 2026 · Three big bets:
               <br />1. Ship the Second Brain MVP
               <br />2. Hit 50mpw running consistently
               <br />3. Launch photography portfolio

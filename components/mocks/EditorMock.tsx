@@ -146,19 +146,19 @@ export function EditorMock() {
               <a className="text-accent-ink bg-accent-soft px-1 rounded border-b border-accent no-underline">
                 [[Sleep Routine]]
               </a>{' '}
-              — tied bedtime to a specific cue (phone airplane mode)
+             , tied bedtime to a specific cue (phone airplane mode)
             </li>
             <li>
               <a className="text-accent-ink bg-accent-soft px-1 rounded border-b border-accent no-underline">
                 [[Marathon Training]]
               </a>{' '}
-              — daily run is identity, not a chore
+             , daily run is identity, not a chore
             </li>
             <li>
               <a className="text-accent-ink bg-accent-soft px-1 rounded border-b border-accent no-underline">
                 [[Budget 2026]]
               </a>{' '}
-              — automated savings, no willpower needed
+             , automated savings, no willpower needed
             </li>
           </ul>
 

@@ -131,7 +131,7 @@ export function DailyMock() {
 
           <h2 className="font-serif text-[16px] font-semibold tracking-tight text-ink mb-1">Morning thoughts</h2>
           <p className="font-serif text-[12.5px] leading-[1.6] text-ink">
-            The migration ran clean overnight — 14 minutes for the
+            The migration ran clean overnight, 14 minutes for the
             <code className="font-mono text-[11px] bg-paper-2 px-1 rounded mx-0.5">CREATE INDEX CONCURRENTLY</code>
             on a 240M-row table. p99 on the dashboard query is now 38ms, down from 4.2s.
           </p>

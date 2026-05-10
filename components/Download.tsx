@@ -52,7 +52,7 @@ export function Download() {
             Pick Your Platform.
           </h2>
           <p className="font-serif text-[16px] leading-relaxed text-ink-2 max-w-xl mx-auto">
-            All builds are unsigned for now — first launch on macOS may need a
+            All builds are unsigned for now, first launch on macOS may need a
             right-click → Open. Windows and Linux builds come from the same CI
             pipeline but get less mileage; bug reports welcome.
           </p>
@@ -98,7 +98,7 @@ export function Download() {
                         <circle cx="12" cy="12" r="9" />
                         <path d="M12 7v5l3 2" />
                       </svg>
-                      v0.2 — soon
+                      v0.2 · soon
                     </>
                   ) : (
                     <>

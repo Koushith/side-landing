@@ -1,15 +1,15 @@
 const items = [
   {
     q: 'What Does It Cost?',
-    a: 'Nothing. SideNotes is free and open source — MIT licensed. If you want to support it, star the repo or open a thoughtful issue.',
+    a: 'Nothing. SideNotes is free and open source, MIT licensed. If you want to support it, star the repo or open a thoughtful issue.',
   },
   {
     q: 'Is There a Windows / Linux Build?',
-    a: 'Yes — pick your platform from the Download section. macOS gets the most testing; Windows and Linux builds come from the same CI pipeline but have less mileage. Bug reports welcome.',
+    a: 'Yes, pick your platform from the Download section. macOS gets the most testing; Windows and Linux builds come from the same CI pipeline but have less mileage. Bug reports welcome.',
   },
   {
     q: 'How Do I Sync Notes Across Devices?',
-    a: "SideNotes is local-first by design — point your vault at any folder you already sync (iCloud Drive, Dropbox, Syncthing, a USB stick). The app doesn't run a sync service; we don't want to.",
+    a: "SideNotes is local-first by design, point your vault at any folder you already sync (iCloud Drive, Dropbox, Syncthing, a USB stick). The app doesn't run a sync service; we don't want to.",
   },
   {
     q: 'Will My Files Work in Obsidian?',
@@ -17,7 +17,7 @@ const items = [
   },
   {
     q: 'Are There Plugins?',
-    a: 'Not in v0.2. The roadmap leaves room for them, but the goal is to ship the right defaults first — slash menu, graph, canvas, daily notes — instead of pushing customisation onto you.',
+    a: 'Not in v0.2. The roadmap leaves room for them, but the goal is to ship the right defaults first, slash menu, graph, canvas, daily notes, instead of pushing customisation onto you.',
   },
   {
     q: 'Is My Data Sent Anywhere?',

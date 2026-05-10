@@ -2,10 +2,17 @@
 // page references. Bump VERSION when a new release ships — every download
 // button updates automatically.
 
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sidenotes.app');
+
 export const REPO_URL = 'https://github.com/Koushith/side-deck';
 export const ISSUES_URL = `${REPO_URL}/issues`;
 export const RELEASES_URL = `${REPO_URL}/releases`;
 export const LATEST_RELEASE_URL = `${RELEASES_URL}/latest`;
+export const TWITTER_URL = 'https://x.com/koushithamin';
+export const ENS_NAME = 'koushith.eth';
+export const ETH_ADDRESS = '0x9ccCA0a968A9bc5916E0de43Ea2D68321655ae67';
 
 export const VERSION = '0.2.0';
 
