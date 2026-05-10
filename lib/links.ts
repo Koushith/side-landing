@@ -2,9 +2,10 @@
 // page references. Bump VERSION when a new release ships, every download
 // button updates automatically.
 
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sidenotes.me');
+// Prefer the production domain so OG/canonical/sitemap URLs always point at
+// sidenotes.me, even on Vercel previews. Set NEXT_PUBLIC_SITE_URL on a preview
+// branch if you genuinely want preview-scoped URLs.
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://sidenotes.me';
 
 export const REPO_URL = 'https://github.com/Koushith/side-deck';
 export const ISSUES_URL = `${REPO_URL}/issues`;
