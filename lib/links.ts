@@ -4,7 +4,7 @@
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sidenotes.app');
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://sidenotes.me');
 
 export const REPO_URL = 'https://github.com/Koushith/side-deck';
 export const ISSUES_URL = `${REPO_URL}/issues`;
