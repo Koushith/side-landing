@@ -40,6 +40,16 @@ const platforms: Platform[] = [
   },
 ];
 
+const extraBuilds: { label: string; suffix: string; href: string }[] = [
+  { label: 'macOS · Apple Silicon', suffix: '.zip', href: DOWNLOADS.macArmZip },
+  { label: 'macOS · Intel', suffix: '.zip', href: DOWNLOADS.macIntelZip },
+  { label: 'Windows · ARM64', suffix: '.exe', href: DOWNLOADS.windowsArm },
+  { label: 'Windows · x64 portable', suffix: '.exe', href: DOWNLOADS.windowsPortable },
+  { label: 'Linux · ARM64', suffix: '.AppImage', href: DOWNLOADS.linuxArm },
+  { label: 'Linux · Debian / Ubuntu (x64)', suffix: '.deb', href: DOWNLOADS.linuxDeb },
+  { label: 'Linux · Debian / Ubuntu (ARM64)', suffix: '.deb', href: DOWNLOADS.linuxDebArm },
+];
+
 export function Download() {
   return (
     <section id="download" className="scroll-mt-20 px-6 py-24 bg-paper-2 border-y border-rule-soft">
@@ -147,6 +157,40 @@ export function Download() {
             );
           })}
         </div>
+
+        <details className="group mt-10 mx-auto max-w-2xl">
+          <summary className="cursor-pointer list-none flex items-center justify-center gap-2 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-3 hover:text-ink transition-colors">
+            <svg
+              width={11}
+              height={11}
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              className="transition-transform group-open:rotate-90"
+              aria-hidden
+            >
+              <path d="m9 6 6 6-6 6" />
+            </svg>
+            More builds (ARM, .deb, .zip)
+          </summary>
+          <ul className="mt-5 grid sm:grid-cols-2 gap-x-6 gap-y-2 font-mono text-[12px] text-ink-2">
+            {extraBuilds.map((b) => (
+              <li key={b.href}>
+                <a
+                  href={b.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-between py-1.5 border-b border-rule-soft hover:text-ink transition-colors"
+                >
+                  <span>{b.label}</span>
+                  <span className="text-ink-4 text-[11px]">{b.suffix}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </details>
 
         <div className="mt-10 text-center">
           <a

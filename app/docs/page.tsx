@@ -82,14 +82,14 @@ export default function DocsPage() {
                 </ol>
                 <h3>Windows</h3>
                 <p>
-                  Run <code>Side-Setup-x.y.z-x64.exe</code> (or the{' '}
+                  Run <code>SideNotes-Setup-x.y.z-x64.exe</code> (or the{' '}
                   <code>arm64</code> build on Surface devices). NSIS installs
                   per-user; no admin rights needed.
                 </p>
                 <h3>Linux</h3>
                 <p>
                   Download the <code>.AppImage</code>,{' '}
-                  <code>chmod +x Side-*.AppImage</code>, and run it. AppImages
+                  <code>chmod +x SideNotes-*.AppImage</code>, and run it. AppImages
                   are self-contained, no install step.
                 </p>
                 <h3>Build from Source</h3>

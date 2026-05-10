@@ -25,8 +25,13 @@ const BASE = `${RELEASES_URL}/latest/download`;
 export const DOWNLOADS = {
   macArm: `${BASE}/SideNotes-${VERSION}-mac-arm64.dmg`,
   macIntel: `${BASE}/SideNotes-${VERSION}-mac-x64.dmg`,
+  macArmZip: `${BASE}/SideNotes-${VERSION}-mac-arm64.zip`,
+  macIntelZip: `${BASE}/SideNotes-${VERSION}-mac-x64.zip`,
   windows: `${BASE}/SideNotes-Setup-${VERSION}-x64.exe`,
   windowsArm: `${BASE}/SideNotes-Setup-${VERSION}-arm64.exe`,
+  windowsPortable: `${BASE}/SideNotes-${VERSION}-win-x64.exe`,
   linux: `${BASE}/SideNotes-${VERSION}-linux-x86_64.AppImage`,
   linuxArm: `${BASE}/SideNotes-${VERSION}-linux-arm64.AppImage`,
+  linuxDeb: `${BASE}/SideNotes-${VERSION}-linux-amd64.deb`,
+  linuxDebArm: `${BASE}/SideNotes-${VERSION}-linux-arm64.deb`,
 };
