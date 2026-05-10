@@ -1,29 +1,4 @@
-const items = [
-  {
-    q: 'What Does It Cost?',
-    a: 'Nothing. SideNotes is free and open source, MIT licensed. If you want to support it, star the repo or open a thoughtful issue.',
-  },
-  {
-    q: 'Is There a Windows / Linux Build?',
-    a: 'Yes, pick your platform from the Download section. macOS gets the most testing; Windows and Linux builds come from the same CI pipeline but have less mileage. Bug reports welcome.',
-  },
-  {
-    q: 'How Do I Sync Notes Across Devices?',
-    a: "SideNotes is local-first by design, point your vault at any folder you already sync (iCloud Drive, Dropbox, Syncthing, a USB stick). The app doesn't run a sync service; we don't want to.",
-  },
-  {
-    q: 'Will My Files Work in Obsidian?',
-    a: "Yes. Notes are plain markdown with [[wikilinks]] and #tags. Canvas files use Obsidian's .canvas JSON format. You can switch in either direction without exporting anything.",
-  },
-  {
-    q: 'Are There Plugins?',
-    a: 'Not in v0.2. The roadmap leaves room for them, but the goal is to ship the right defaults first, slash menu, graph, canvas, daily notes, instead of pushing customisation onto you.',
-  },
-  {
-    q: 'Is My Data Sent Anywhere?',
-    a: 'No. There is no telemetry, no analytics, no auto-update phone-home. The app reads and writes files in the folder you picked. That is the entire surface area.',
-  },
-];
+import { FAQ_ITEMS } from '@/lib/seo';
 
 export function FAQ() {
   return (
@@ -39,7 +14,7 @@ export function FAQ() {
         </div>
 
         <div className="divide-y divide-rule">
-          {items.map((it, i) => (
+          {FAQ_ITEMS.map((it, i) => (
             <details key={i} className="group py-5">
               <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
                 <span className="font-serif text-[18px] font-semibold text-ink leading-snug">

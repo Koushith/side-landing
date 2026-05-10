@@ -3,9 +3,23 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Changelog · SideNotes',
+  title: 'Changelog',
   description:
-    'Release notes for SideNotes. New features, fixes, and removed cruft, version by version.',
+    'Release notes for SideNotes. What is new, what got fixed, and what got cut, version by version, in plain English.',
+  alternates: { canonical: '/changelog' },
+  openGraph: {
+    title: 'Changelog · SideNotes',
+    description:
+      'What is new, what got fixed, and what got cut, version by version.',
+    url: '/changelog',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Changelog · SideNotes',
+    description:
+      'What is new, what got fixed, and what got cut, in plain English.',
+  },
 };
 
 type Section = { label: 'New' | 'Fixed' | 'Removed'; items: string[] };

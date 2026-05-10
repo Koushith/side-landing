@@ -1,10 +1,45 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import { SITE_URL, TWITTER_URL } from '@/lib/links';
+import {
+  KEYWORDS,
+  SITE_DESCRIPTION,
+  SITE_DESCRIPTION_SHORT,
+  SITE_NAME,
+  SITE_TAGLINE,
+} from '@/lib/seo';
+
+const TWITTER_HANDLE = '@koushithamin';
 
 export const metadata: Metadata = {
-  title: 'SideNotes · a quiet second brain',
-  description:
-    'Notion-easy editor, Obsidian-deep linking. Plain markdown files on your Mac. No cloud, no lock-in.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} · ${SITE_TAGLINE}`,
+    template: `%s · ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION_SHORT,
+  applicationName: SITE_NAME,
+  keywords: KEYWORDS,
+  authors: [{ name: 'Koushith Amin', url: TWITTER_URL }],
+  creator: 'Koushith Amin',
+  publisher: 'Koushith Amin',
+  category: 'productivity',
+  generator: 'Next.js',
+  referrer: 'origin-when-cross-origin',
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -12,13 +47,46 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-touch-icon.png',
   },
+  manifest: '/manifest.webmanifest',
   openGraph: {
-    title: 'SideNotes · a quiet second brain',
-    description:
-      'Notion-easy editor, Obsidian-deep linking. Plain markdown files on your Mac.',
+    title: `${SITE_NAME} · ${SITE_TAGLINE}`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: '/og.png',
+        width: 1200,
+        height: 630,
+        alt: `${SITE_NAME}, a friendly second brain for everyone`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `${SITE_NAME} · ${SITE_TAGLINE}`,
+    description: SITE_DESCRIPTION_SHORT,
+    creator: TWITTER_HANDLE,
+    site: TWITTER_HANDLE,
     images: ['/og.png'],
   },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f7f3ec' },
+    { media: '(prefers-color-scheme: dark)', color: '#1f1d1a' },
+  ],
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({

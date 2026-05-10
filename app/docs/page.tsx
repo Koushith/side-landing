@@ -8,9 +8,23 @@ import { Callout } from '@/components/docs/Callout';
 import { ShortcutTable } from '@/components/docs/ShortcutTable';
 
 export const metadata: Metadata = {
-  title: 'Docs · SideNotes',
+  title: 'Docs',
   description:
-    'Everything you can do in SideNotes: vaults, the editor, wikilinks, mentions, tags, canvas, the graph, daily notes, templates, themes, export, and every keyboard shortcut.',
+    'A friendly walkthrough of SideNotes. How to set up your vault, write notes, link ideas with [[wikilinks]], use the canvas and graph, keep a daily journal, and customise the app, written for non-technical users.',
+  alternates: { canonical: '/docs' },
+  openGraph: {
+    title: 'Docs · SideNotes',
+    description:
+      'A friendly walkthrough of SideNotes, vaults, writing, wikilinks, canvas, graph, daily notes, themes, and shortcuts.',
+    url: '/docs',
+    type: 'article',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Docs · SideNotes',
+    description:
+      'A friendly walkthrough of SideNotes, written for non-technical users.',
+  },
 };
 
 export default function DocsPage() {

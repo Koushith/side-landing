@@ -1,5 +1,5 @@
 // Single source of truth for download links and external URLs the landing
-// page references. Bump VERSION when a new release ships — every download
+// page references. Bump VERSION when a new release ships, every download
 // button updates automatically.
 
 export const SITE_URL =
