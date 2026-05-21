@@ -38,7 +38,7 @@ export function Nav() {
             <a
               key={l.href}
               href={l.href}
-              className="text-[13.5px] text-ink-3 hover:text-ink transition-colors"
+              className="font-serif text-[14.5px] text-ink-3 hover:text-ink transition-colors"
             >
               {l.label}
             </a>
@@ -47,7 +47,7 @@ export function Nav() {
         <div className="ml-auto flex items-center gap-2">
           <a
             href={REPO_URL}
-            className="hidden md:inline-flex items-center gap-1.5 text-[13px] text-ink-3 hover:text-ink"
+            className="hidden md:inline-flex items-center gap-1.5 font-serif text-[14px] text-ink-3 hover:text-ink"
             target="_blank"
             rel="noopener noreferrer"
           >
