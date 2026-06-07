@@ -58,7 +58,7 @@ export default function DocsPage() {
               >
                 <p>
                   SideNotes is a desktop app built on Electron. Builds for macOS
-                  (Apple Silicon and Intel), Windows, and Linux are published on
+                  (Apple Silicon), Windows, and Linux are published on
                   GitHub Releases. macOS gets the most testing; the other
                   platforms come from the same CI pipeline but have less mileage
                  , bug reports welcome.
@@ -66,7 +66,7 @@ export default function DocsPage() {
                 <h3>macOS</h3>
                 <ol>
                   <li>
-                    Download the <code>.dmg</code> for Apple Silicon or Intel
+                    Download the <code>.dmg</code> for Apple Silicon
                     from the <a href="#download">Download</a> section on the
                     landing page.
                   </li>

@@ -18,13 +18,6 @@ const platforms: Platform[] = [
     glyph: 'apple',
   },
   {
-    name: 'macOS',
-    arch: 'Intel',
-    suffix: '.dmg',
-    href: DOWNLOADS.macIntel,
-    glyph: 'apple',
-  },
-  {
     name: 'Windows',
     arch: '10 / 11 · x64',
     suffix: '.exe',
@@ -42,7 +35,6 @@ const platforms: Platform[] = [
 
 const extraBuilds: { label: string; suffix: string; href: string }[] = [
   { label: 'macOS · Apple Silicon', suffix: '.zip', href: DOWNLOADS.macArmZip },
-  { label: 'macOS · Intel', suffix: '.zip', href: DOWNLOADS.macIntelZip },
   { label: 'Windows · ARM64', suffix: '.exe', href: DOWNLOADS.windowsArm },
   { label: 'Windows · x64 portable', suffix: '.exe', href: DOWNLOADS.windowsPortable },
   { label: 'Linux · ARM64', suffix: '.AppImage', href: DOWNLOADS.linuxArm },
