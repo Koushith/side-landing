@@ -15,7 +15,7 @@ export const TWITTER_URL = 'https://x.com/koushithamin';
 export const ENS_NAME = 'koushith.eth';
 export const ETH_ADDRESS = '0x9ccCA0a968A9bc5916E0de43Ea2D68321655ae67';
 
-export const VERSION = '0.2.0';
+export const VERSION = '0.4.0';
 
 /** GitHub auto-redirects `/releases/latest/download/<asset>` to whichever
  *  asset under the latest tag has that exact filename. Names match the

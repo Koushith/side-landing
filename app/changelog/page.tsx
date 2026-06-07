@@ -32,6 +32,34 @@ type Release = {
 
 const RELEASES: Release[] = [
   {
+    version: '0.4.0',
+    date: 'June 2026',
+    highlight:
+      'Talk to your notes with voice dictation, sketch ideas with built-in Excalidraw drawings, and back everything up to GitHub in one click with a rebuilt Source Control. Still fully local-first and private.',
+    sections: [
+      {
+        label: 'New',
+        items: [
+          'Voice dictation, hold a key and speak; your words are transcribed and dropped at the cursor. Pick a cloud model (OpenAI gpt-4o-transcribe, or Groq) for top accuracy, or run Whisper fully offline on your machine. Optional AI cleanup removes filler words and fixes punctuation',
+          'Excalidraw drawings, create freehand sketches and diagrams as .excalidraw files right in your vault, from the + menu, the command palette, or by right-clicking a folder. Fully offline, autosaves as you draw',
+          'Source Control, rebuilt, the panel updates live as you edit, surfaces the next action (a prominent Push to GitHub when you are ahead), shows an honest Up to date state, and Commit auto-stages your changes so you never have to think about staging',
+          'Test connection, verify your AI provider or voice model works from Settings before relying on it',
+          'The Assistant panel now shows at a glance whether it is set up and which model is active, with one-click setup when it is not',
+          'The version number now sits next to the SideNotes logo',
+        ],
+      },
+      {
+        label: 'Fixed',
+        items: [
+          'Source Control no longer shows a stale ahead/behind count, first-time pushes set the upstream automatically, and git errors (auth, network, conflicts) are shown in plain English instead of raw stderr',
+          'Create and OK buttons in dialogs are now readable on every theme (were light-on-light in dark themes)',
+          'AI settings decluttered, the API key and model come first, with the endpoint Base URL tucked under Advanced',
+          'The top bar was trimmed from nine icons to six; less-used actions moved into the overflow menu',
+        ],
+      },
+    ],
+  },
+  {
     version: '0.3.0',
     date: 'May 2026',
     highlight:

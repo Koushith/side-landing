@@ -1,4 +1,4 @@
-import { REPO_URL, SITE_URL, TWITTER_URL } from './links';
+import { REPO_URL, SITE_URL, TWITTER_URL, VERSION } from './links';
 
 export const SITE_NAME = 'SideNotes';
 export const SITE_TAGLINE = 'A quiet second brain';
@@ -87,7 +87,7 @@ export function softwareAppSchema(): SchemaObject {
     applicationCategory: 'ProductivityApplication',
     applicationSubCategory: 'Note-taking',
     operatingSystem: 'macOS, Windows, Linux',
-    softwareVersion: '0.2.0',
+    softwareVersion: VERSION,
     downloadUrl: `${REPO_URL}/releases/latest`,
     license: 'https://opensource.org/licenses/MIT',
     isAccessibleForFree: true,

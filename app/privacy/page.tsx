@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
+import { VERSION } from '@/lib/links';
 
 export const metadata: Metadata = {
   title: 'Privacy',
@@ -230,7 +231,7 @@ export default function PrivacyPage() {
 
           <div className="mt-20 pt-10 border-t border-rule-soft">
             <p className="font-mono text-[10.5px] uppercase tracking-[0.12em] text-ink-3">
-              SideNotes · MIT licensed · v0.2.0
+              SideNotes · MIT licensed · v{VERSION}
             </p>
           </div>
         </div>
